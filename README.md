@@ -35,7 +35,7 @@ def get_zip_lookup():
         print("ZIP lookup table being initialized")
         global ziplookup
         ziplookup = {}
-        with open("zip-lookup.csv", "r", encoding="utf-8") as infile:
+        with open("geo/zip-lookup.csv", "r", encoding="utf-8") as infile:
             reader = csv.DictReader(infile)
             for row in reader:
                 ziplookup[row['zip_code']] = row
